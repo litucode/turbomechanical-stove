@@ -60,5 +60,12 @@ class Turbine():
         Q = self.volume_flow_rate()  # m³/s
         return pressure_increase_Pa * Q  # W (J/s)
 
+    def static_in_gas(self):
+        """
+        Calcula la energía estática en un gas en movimiento.
+        """
+        # Implementación del cálculo de energía estática en gases
+        pass
+
     def __str__(self):
         return (f"Turbine(diameter={self.diameter} m, length={self.dimensions.length} m, rpm={self.rpm})")
